@@ -13,6 +13,11 @@ class ReminderRequest(BaseModel):
     remind_at: time
     roadmap_id: str
 
+class EvaluationRequest(BaseModel):
+    goal: str
+    questions: List[str]
+    answers: List[str]
+
 class DayPlan(BaseModel):
     day: int
     topic: str
@@ -25,3 +30,10 @@ class Roadmap(BaseModel):
     days: List[DayPlan]
     duration_days: int
     created_at: datetime
+
+class EvaluationResult(BaseModel):
+    strong_areas: List[str]
+    weak_areas: List[str]
+    focus_areas: List[str]
+    experience_level: str
+    summary: str

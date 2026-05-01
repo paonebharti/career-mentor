@@ -1,2 +1,4 @@
 .env
 mentor/
+__pycache__
+agent.log
