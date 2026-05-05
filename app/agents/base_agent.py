@@ -13,14 +13,14 @@ class BaseAgent:
     async def run(self, query: str) -> str:
         raise NotImplementedError("Each agent must implement run()")
 
-    async def _complete(self, messages: list) -> str:
+    async def _complete(self, messages: list, max_tokens: int = 300) -> str:
         try:
             client = AsyncOpenAI()
             kwargs = {
                 "model": "gpt-4o-mini",
                 "messages": messages,
                 "temperature": 0.2,
-                "max_tokens": 300
+                "max_tokens": max_tokens
             }
 
             if self.tools:
