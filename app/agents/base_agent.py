@@ -13,7 +13,7 @@ class BaseAgent:
     async def run(self, query: str) -> str:
         raise NotImplementedError("Each agent must implement run()")
 
-    async def _complete(self, messages: list, max_tokens: int = 300) -> str:
+    async def _complete(self, messages: list, max_tokens: int = 300, timeout: int = 10) -> str:
         try:
             client = AsyncOpenAI()
             kwargs = {
@@ -29,7 +29,7 @@ class BaseAgent:
 
             response = await asyncio.wait_for(
                 client.chat.completions.create(**kwargs),
-                timeout=10
+                timeout=timeout
             )
 
             return response.choices[0].message.content

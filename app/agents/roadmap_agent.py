@@ -37,7 +37,7 @@ class RoadmapAgent(BaseAgent):
                 "Return ONLY a valid JSON array where each item has: day (int), topic (string), tasks (list of strings), resources (list of strings). No markdown, no explanation. "
             )}
         ]
-        raw = await self._complete(messages, max_tokens=4000)
+        raw = await self._complete(messages, max_tokens=4000, timeout=60)
         print(f"RAW RESPONSE: {raw}")
         clean = raw.strip().replace("```json", "").replace("```", "").strip()
         # print("********************************************************************************************************************")

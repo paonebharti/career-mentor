@@ -1,9 +1,10 @@
 import os
 from fastapi import FastAPI, Depends
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 from app.dependencies import verify_api_key, check_rate_limit
-from app.schemas import GoalRequest, EvaluationResult, EvaluationRequest
+from app.schemas import GoalRequest, EvaluationRequest, EvaluationResult, Roadmap
 from app.agents.evaluation_agent import EvaluationAgent
+from app.agents.calendar_agent import CalendarAgent
 from app.agents.roadmap_agent import RoadmapAgent
 from app.logger import get_logger
 from dotenv import load_dotenv
@@ -22,6 +23,7 @@ app = FastAPI(
 
 evaluation_agent = EvaluationAgent()
 roadmap_agent = RoadmapAgent()
+calendar_agent = CalendarAgent()
 
 @app.get("/health")
 def health():
@@ -55,5 +57,17 @@ async def generate_roadmap(goal: str, duration_days: int, request: EvaluationRes
     try:
         roadmap = await roadmap_agent.generate_roadmap(goal, duration_days, request)
         return roadmap
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+@app.post("/mentor/calendar")
+async def generate_calendar(roadmap: Roadmap):
+    try:
+        ics_bytes = calendar_agent.generate_calendar(roadmap)
+        return Response(
+            content=ics_bytes,
+            media_type="text/calendar",
+            headers={"Content-Disposition": "attachment; filename=roadmap.ics"}
+        )
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
