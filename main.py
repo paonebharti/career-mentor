@@ -3,6 +3,7 @@ from fastapi import FastAPI, Depends
 from fastapi.responses import JSONResponse, Response
 from app.dependencies import verify_api_key, check_rate_limit
 from app.schemas import GoalRequest, EvaluationRequest, EvaluationResult, Roadmap
+from app.agents.opportunities_agent import OpportunitiesAgent
 from app.agents.evaluation_agent import EvaluationAgent
 from app.agents.calendar_agent import CalendarAgent
 from app.agents.roadmap_agent import RoadmapAgent
@@ -21,6 +22,7 @@ app = FastAPI(
     ]
 )
 
+opportunities_agent = OpportunitiesAgent()
 evaluation_agent = EvaluationAgent()
 roadmap_agent = RoadmapAgent()
 calendar_agent = CalendarAgent()
@@ -69,5 +71,13 @@ async def generate_calendar(roadmap: Roadmap):
             media_type="text/calendar",
             headers={"Content-Disposition": "attachment; filename=roadmap.ics"}
         )
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"error": str(e)})
+
+@app.post("/mentor/opportunities")
+async def find_opportunities(goal: str, request: EvaluationResult):
+    try:
+        result = await opportunities_agent.find_opportunities(goal, request)
+        return result
     except Exception as e:
         return JSONResponse(status_code=500, content={"error": str(e)})
