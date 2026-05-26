@@ -32,9 +32,9 @@ class OpportunitiesAgent(BaseAgent):
 
         # run three searches concurrently
         job_search, project_search, community_search = await asyncio.gather(
-            asyncio.to_thread(tavily.search, f"{goal} jobs for {evaluation.experience_level}"),
-            asyncio.to_thread(tavily.search, f"open source projects for {goal}"),
-            asyncio.to_thread(tavily.search, f"communities forums discord for {goal}")
+            asyncio.to_thread(tavily.search, f"{goal} job opening hiring {evaluation.experience_level} level 2026"),
+            asyncio.to_thread(tavily.search, f"github open source projects {goal} for contributors {evaluation.experience_level}"),
+            asyncio.to_thread(tavily.search, f"{goal} developer community discord forum reddit subreddit join")
         )
 
         # extract results

@@ -1,22 +1,11 @@
 from pydantic import BaseModel
 from typing import Optional, List
-from datetime import time, datetime
+from datetime import time, date, datetime
 
 class GoalRequest (BaseModel):
     goal: str
     background: str
     duration_days: int
-
-class ReminderRequest(BaseModel):
-    email: str
-    phone: str
-    remind_at: time
-    roadmap_id: str
-
-class EvaluationRequest(BaseModel):
-    goal: str
-    questions: List[str]
-    answers: List[str]
 
 class DayPlan(BaseModel):
     day: int
@@ -30,6 +19,18 @@ class Roadmap(BaseModel):
     days: List[DayPlan]
     duration_days: int
     created_at: datetime
+
+class ReminderRequest(BaseModel):
+    email: str
+    phone: str
+    remind_at: time
+    roadmap_id: str
+    start_date: date
+
+class EvaluationRequest(BaseModel):
+    goal: str
+    questions: List[str]
+    answers: List[str]
 
 class EvaluationResult(BaseModel):
     strong_areas: List[str]

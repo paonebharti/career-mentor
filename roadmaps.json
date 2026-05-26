@@ -1,0 +1,108 @@
+{
+  "b1bffa5d-ac7b-4ab4-8dcb-d1161a4cc262": {
+    "id": "b1bffa5d-ac7b-4ab4-8dcb-d1161a4cc262",
+    "goal": "become a agentic ai engineer",
+    "days": [
+      {
+        "day": 1,
+        "topic": "Design and Implementation of Agentic AI",
+        "tasks": [
+          "Read about the architecture of agentic AI systems.",
+          "Identify key components that differentiate agentic AI from traditional AI.",
+          "Create a simple diagram illustrating the design of an agentic AI system."
+        ],
+        "resources": [
+          "Book: 'Artificial Intelligence: A Guide to Intelligent Systems' by Michael Negnevitsky",
+          "Article: 'Understanding Agentic AI' on Medium",
+          "Video: 'Introduction to Agentic AI' on YouTube"
+        ]
+      },
+      {
+        "day": 2,
+        "topic": "Programming Basics for Agentic AI",
+        "tasks": [
+          "Complete a beginner tutorial on Python libraries for AI (e.g., NumPy, Pandas).",
+          "Set up a development environment with Jupyter Notebook.",
+          "Write a simple Python script that uses NumPy to manipulate data."
+        ],
+        "resources": [
+          "Website: Codecademy Python Course",
+          "Video: 'Python for Data Science' on Coursera",
+          "Documentation: NumPy Documentation"
+        ]
+      },
+      {
+        "day": 3,
+        "topic": "Ethical Considerations in AI Development",
+        "tasks": [
+          "Read about ethical frameworks for AI development.",
+          "Summarize key ethical guidelines relevant to agentic AI.",
+          "Discuss the implications of autonomy in AI on ethical practices."
+        ],
+        "resources": [
+          "Article: 'Ethics of AI and Robotics' on Stanford Encyclopedia of Philosophy",
+          "Book: 'Weapons of Math Destruction' by Cathy O'Neil",
+          "Video: 'The Ethical Dilemma of AI' on TED"
+        ]
+      },
+      {
+        "day": 4,
+        "topic": "Deep Dive into Agentic AI Design",
+        "tasks": [
+          "Research different design patterns used in agentic AI.",
+          "Create a comparison chart between traditional AI and agentic AI designs.",
+          "Draft a proposal for a simple agentic AI project."
+        ],
+        "resources": [
+          "Article: 'Design Patterns for Autonomous Agents' on ResearchGate",
+          "Book: 'Artificial Intelligence: A Modern Approach' by Stuart Russell and Peter Norvig",
+          "Video: 'Designing Autonomous Agents' on YouTube"
+        ]
+      },
+      {
+        "day": 5,
+        "topic": "Advanced Programming with TensorFlow or PyTorch",
+        "tasks": [
+          "Choose either TensorFlow or PyTorch and complete a beginner tutorial.",
+          "Implement a basic neural network using the chosen framework.",
+          "Experiment with modifying the network to understand its components."
+        ],
+        "resources": [
+          "Website: TensorFlow Tutorials or PyTorch Tutorials",
+          "Video: 'Deep Learning with TensorFlow' on Coursera",
+          "Documentation: TensorFlow or PyTorch Documentation"
+        ]
+      },
+      {
+        "day": 6,
+        "topic": "Revision of Key Concepts",
+        "tasks": [
+          "Review notes on agentic AI design and implementation.",
+          "Revisit ethical considerations and frameworks discussed.",
+          "Practice explaining the differences between traditional AI and agentic AI."
+        ],
+        "resources": [
+          "Personal notes and diagrams created in previous days.",
+          "Flashcards on key concepts.",
+          "Discussion forums on AI ethics and design."
+        ]
+      },
+      {
+        "day": 7,
+        "topic": "Capstone Project Planning",
+        "tasks": [
+          "Outline a capstone project that incorporates agentic AI principles.",
+          "Identify the programming languages and frameworks needed for the project.",
+          "Draft a timeline and milestones for project completion."
+        ],
+        "resources": [
+          "Article: 'How to Plan an AI Project' on Towards Data Science",
+          "Book: 'AI: A Very Short Introduction' by Margaret A. Boden",
+          "Video: 'Building AI Projects' on YouTube"
+        ]
+      }
+    ],
+    "duration_days": 7,
+    "created_at": "2026-05-26T12:54:59.103565"
+  }
+}
