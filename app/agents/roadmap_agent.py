@@ -40,9 +40,6 @@ class RoadmapAgent(BaseAgent):
         raw = await self._complete(messages, max_tokens=4000, timeout=60)
         print(f"RAW RESPONSE: {raw}")
         clean = raw.strip().replace("```json", "").replace("```", "").strip()
-        # print("********************************************************************************************************************")
-        # print(clean)
-        # print("********************************************************************************************************************")
         day_plans = [DayPlan(**day) for day in json.loads(clean)]
         return Roadmap(
             id=str(uuid.uuid4()),

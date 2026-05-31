@@ -104,5 +104,253 @@
     ],
     "duration_days": 7,
     "created_at": "2026-05-26T12:54:59.103565"
+  },
+  "93435835-7120-47cc-8a42-51aa26058371": {
+    "id": "93435835-7120-47cc-8a42-51aa26058371",
+    "goal": "become an agentic AI engineer",
+    "days": [
+      {
+        "day": 1,
+        "topic": "Introduction to Reinforcement Learning",
+        "tasks": [
+          "Read introductory articles on reinforcement learning.",
+          "Watch a beginner-friendly video on reinforcement learning concepts."
+        ],
+        "resources": [
+          "https://towardsdatascience.com/an-introduction-to-reinforcement-learning-1a5e8c1c7c4e",
+          "https://www.youtube.com/watch?v=2pWv7GOvuf0"
+        ]
+      },
+      {
+        "day": 2,
+        "topic": "Hands-on with Basic Reinforcement Learning",
+        "tasks": [
+          "Implement a simple Q-learning algorithm in Python.",
+          "Experiment with different parameters to see their effects."
+        ],
+        "resources": [
+          "https://www.geeksforgeeks.org/q-learning-in-reinforcement-learning/",
+          "https://www.youtube.com/watch?v=0g5d7g4t8tM"
+        ]
+      },
+      {
+        "day": 3,
+        "topic": "Revision of Reinforcement Learning Concepts",
+        "tasks": [
+          "Review notes and key concepts from the previous days.",
+          "Create flashcards for important terms and algorithms."
+        ],
+        "resources": [
+          "https://www.flashcardmachine.com/",
+          "https://www.khanacademy.org/computing/computer-science/algorithms"
+        ]
+      },
+      {
+        "day": 4,
+        "topic": "Deep Dive into Agentic AI Design Principles",
+        "tasks": [
+          "Study the design principles of agentic AI systems.",
+          "Read case studies on successful agentic AI implementations."
+        ],
+        "resources": [
+          "https://www.oreilly.com/library/view/agentic-ai/9781492081348/",
+          "https://www.researchgate.net/publication/335123456_Design_Principles_for_Agentic_AI"
+        ]
+      },
+      {
+        "day": 5,
+        "topic": "Implementing a Basic Agentic AI System",
+        "tasks": [
+          "Outline a simple agentic AI project idea.",
+          "Start coding the basic structure of the project."
+        ],
+        "resources": [
+          "https://www.tensorflow.org/agents",
+          "https://www.pytorch.org/"
+        ]
+      },
+      {
+        "day": 6,
+        "topic": "Revision of Agentic AI Concepts",
+        "tasks": [
+          "Summarize key design principles learned.",
+          "Discuss with peers or online forums about agentic AI challenges."
+        ],
+        "resources": [
+          "https://www.reddit.com/r/MachineLearning/",
+          "https://www.linkedin.com/groups/123456/"
+        ]
+      },
+      {
+        "day": 7,
+        "topic": "Exploring Integration Strategies for AI Models",
+        "tasks": [
+          "Research integration strategies for AI models with web frameworks.",
+          "Identify potential challenges in integration."
+        ],
+        "resources": [
+          "https://www.rubyguides.com/2018/06/rails-and-ai/",
+          "https://medium.com/@john.doe/integrating-ai-with-web-applications-123456"
+        ]
+      },
+      {
+        "day": 8,
+        "topic": "Hands-on Integration with Ruby on Rails",
+        "tasks": [
+          "Create a simple Ruby on Rails application.",
+          "Integrate a basic AI model into the application."
+        ],
+        "resources": [
+          "https://guides.rubyonrails.org/getting_started.html",
+          "https://www.digitalocean.com/community/tutorials/how-to-build-a-simple-ai-app-with-rails"
+        ]
+      },
+      {
+        "day": 9,
+        "topic": "Revision of Integration Concepts",
+        "tasks": [
+          "Review integration strategies and challenges.",
+          "Prepare a presentation on your findings."
+        ],
+        "resources": [
+          "https://www.canva.com/presentations/templates/",
+          "https://www.slideshare.net/"
+        ]
+      },
+      {
+        "day": 10,
+        "topic": "Advanced Reinforcement Learning Techniques",
+        "tasks": [
+          "Learn about policy gradients and actor-critic methods.",
+          "Read research papers on advanced reinforcement learning."
+        ],
+        "resources": [
+          "https://www.oreilly.com/library/view/reinforcement-learning/9781492031946/",
+          "https://arxiv.org/abs/1707.06347"
+        ]
+      },
+      {
+        "day": 11,
+        "topic": "Implementing Advanced RL Techniques",
+        "tasks": [
+          "Implement a simple actor-critic model.",
+          "Test the model on a basic environment."
+        ],
+        "resources": [
+          "https://spinningup.openai.com/en/latest/algorithms/ppo.html",
+          "https://www.youtube.com/watch?v=8aY6c5P7p4I"
+        ]
+      },
+      {
+        "day": 12,
+        "topic": "Revision of Advanced RL Techniques",
+        "tasks": [
+          "Summarize key points from advanced RL techniques.",
+          "Discuss with peers about implementation challenges."
+        ],
+        "resources": [
+          "https://www.reddit.com/r/reinforcementlearning/",
+          "https://www.kaggle.com/"
+        ]
+      },
+      {
+        "day": 13,
+        "topic": "Ethical Considerations in AI Development",
+        "tasks": [
+          "Study ethical frameworks in AI.",
+          "Analyze case studies of ethical dilemmas in AI."
+        ],
+        "resources": [
+          "https://www.aaai.org/Library/Workshops/ws18-02/WS18-02-01.pdf",
+          "https://www.technologyreview.com/2020/10/06/1009424/ai-ethics-issues/"
+        ]
+      },
+      {
+        "day": 14,
+        "topic": "Practical Application of Ethics in AI",
+        "tasks": [
+          "Draft an ethical guideline for your AI project.",
+          "Review the guideline with peers for feedback."
+        ],
+        "resources": [
+          "https://www.aiethicslab.com/",
+          "https://www.oreilly.com/library/view/ai-ethics/9781492077792/"
+        ]
+      },
+      {
+        "day": 15,
+        "topic": "Revision of Ethical Considerations",
+        "tasks": [
+          "Create a mind map of ethical considerations.",
+          "Present your ethical guidelines to a group."
+        ],
+        "resources": [
+          "https://www.mindmeister.com/",
+          "https://www.canva.com/"
+        ]
+      },
+      {
+        "day": 16,
+        "topic": "Finalizing Your Agentic AI Project",
+        "tasks": [
+          "Complete the coding of your agentic AI project.",
+          "Prepare documentation for your project."
+        ],
+        "resources": [
+          "https://www.markdownguide.org/",
+          "https://www.gitbook.com/"
+        ]
+      },
+      {
+        "day": 17,
+        "topic": "Testing and Debugging Your Project",
+        "tasks": [
+          "Test your project for bugs and performance.",
+          "Gather feedback from users."
+        ],
+        "resources": [
+          "https://www.atlassian.com/git/tutorials/comparing/git-compare",
+          "https://www.youtube.com/watch?v=4Y2qH1Zq7fE"
+        ]
+      },
+      {
+        "day": 18,
+        "topic": "Revision of Project Development",
+        "tasks": [
+          "Review the entire project development process.",
+          "Identify areas for improvement."
+        ],
+        "resources": [
+          "https://www.trello.com/",
+          "https://www.jira.com/"
+        ]
+      },
+      {
+        "day": 19,
+        "topic": "Preparing for Final Presentation",
+        "tasks": [
+          "Create a presentation summarizing your project.",
+          "Practice presenting your project."
+        ],
+        "resources": [
+          "https://www.slideshare.net/",
+          "https://prezi.com/"
+        ]
+      },
+      {
+        "day": 20,
+        "topic": "Final Presentation and Feedback",
+        "tasks": [
+          "Present your project to peers or mentors.",
+          "Gather feedback for future improvements."
+        ],
+        "resources": [
+          "https://www.zoom.us/",
+          "https://www.google.com/meet/"
+        ]
+      }
+    ],
+    "duration_days": 90,
+    "created_at": "2026-05-31T10:44:46.860525"
   }
 }
